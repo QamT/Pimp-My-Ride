@@ -37,8 +37,8 @@ const cssExtract = new MiniCssExtractPlugin({
   filename: 'style.css'
 });
 
-const generateHtmlPlugins = () => glob.sync('./src/**/*.html').map(dir => {
-  const filename = path.basename(dir);
+const generateHtmlPlugins = () => glob.sync('./src/pages/*.html').map(dir => {
+  const filename = 'pages/' + path.basename(dir);
 
   return new HTMLWebpackPlugin({
     filename,
@@ -46,6 +46,12 @@ const generateHtmlPlugins = () => glob.sync('./src/**/*.html').map(dir => {
     inject: 'head'
   });
 });
+
+const indexHtmlPlugin = new HTMLWebpackPlugin({
+  filename: 'index.html',
+  template: path.join(config.root, config.paths.src, 'index.html'),
+  inject: 'head'
+})
 
 const generateScriptAttribute = new ScriptExtHtmlWebpackPlugin({
   defaultAttribute: 'defer'
@@ -97,6 +103,7 @@ const google = new GoogleAnalyticsPlugin({
 module.exports = [
   clean,
   cssExtract,
+  indexHtmlPlugin,
   ...generateHtmlPlugins(),
   generateScriptAttribute,
   fs.existsSync(config.favicon) && favicons,

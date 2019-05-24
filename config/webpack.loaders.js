@@ -4,7 +4,7 @@ const config = require('./config');
 const sourceMap = config.env !== 'production';
 
 const html = {
-  test: /\.(html)$/,
+  test: /\.html$/,
   use: [
     {
       loader: 'html-loader',

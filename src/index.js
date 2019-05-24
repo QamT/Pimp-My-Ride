@@ -7,3 +7,6 @@ window.addEventListener('DOMContentLoaded', () => {
     new Module(el);
   });
 });
+
+// carousel
+// transition on view
