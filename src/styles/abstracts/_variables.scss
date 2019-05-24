@@ -1,0 +1,40 @@
+
+//Breakpoints
+
+@mixin breakpoint($size) {
+  @if $size == xs {
+    @media (max-width: 320px) { @content; }
+  }
+
+  @if $size == sf {
+    @media (max-width: 360px) { @content; }
+  }
+
+  @if $size == s {
+    @media (max-width: 420px) { @content; }
+  }
+
+  @if $size == m {
+    @media (max-width: 560px) { @content; }
+  }
+
+  @if $size == xm {
+    @media (max-width: 720px) { @content; }
+  }
+
+  @if $size == l {
+    @media (max-width: 1080px) { @content; }
+  }
+
+  @if $size == xl {
+    @media (max-width: 1200px) { @content; }
+  }
+
+  @if $size == g {
+    @media (max-width: 1600px) { @content; }
+  }
+}
+
+@mixin rotate {
+  @media (max-width: 840px) and (max-height: 450px) { @content }
+}
