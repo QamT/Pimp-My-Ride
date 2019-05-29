@@ -9,7 +9,7 @@ if (!ROOT) {
 const config = {
   googleAnalyticsUA: '',
 
-  favicon: path.join(ROOT, '/src/assets/favicon.png'),
+  favicon: path.join(ROOT, '/src/assets/favicon.jpg'),
 
   dev_host: 'localhost',
 

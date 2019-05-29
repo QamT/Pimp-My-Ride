@@ -13,6 +13,11 @@ module.exports = {
     path: path.join(config.root, config.paths.dist),
     filename: '[name].bundle.js',
   },
+  resolve: {
+    alias: {
+      Utilities: path.join(config.root, config.paths.src, 'utils')
+    }
+  },
   mode: ['production', 'development'].includes(config.env)
     ? config.env
     : 'development',

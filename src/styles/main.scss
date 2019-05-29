@@ -8,10 +8,19 @@
   'base/typography';
 
 @import
+  'components/button',
+  'components/header',
+  'components/loader';
+
+@import
   'layout/grid',
   'layout/nav',
   'layout/footer.scss';
 
 @import
+  'pages/main-page';
+
+@import
   'vendors/font_awesome',
+  'vendors/jarallax',
   'vendors/normalize';

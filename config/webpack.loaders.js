@@ -53,7 +53,7 @@ const postcssLoader = {
 const css = {
   test: /\.css$/,
   use: [
-    config.env === 'production' ? MiniCssExtractPlugin.loader : styleLoader,
+    MiniCssExtractPlugin.loader,
     cssLoader,
     postcssLoader,
   ],
@@ -62,7 +62,7 @@ const css = {
 const sass = {
   test: /\.s[c|a]ss$/,
   use: [
-    config.env === 'production' ? MiniCssExtractPlugin.loader : styleLoader,
+    MiniCssExtractPlugin.loader,
     cssLoader,
     postcssLoader,
     {
@@ -94,7 +94,7 @@ const imageLoader = {
 const images = {
   test: /\.(gif|png|jpe?g|svg)$/i,
   use: [
-    'file-loader?name=images/[name].[ext]?[hash]',
+    'file-loader?name=images/[name].[ext]',
     config.env === 'production' ? imageLoader : null,
   ].filter(Boolean),
 };
