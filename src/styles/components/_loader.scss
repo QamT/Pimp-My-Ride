@@ -1,0 +1,24 @@
+.loader {
+  width: 100%;
+  transition: .3s ease;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 25%;
+    height: 3px;
+    background-color: $primary-blue;
+    animation: loading 5s linear infinite;
+  }
+
+  &-fade {
+    transition: none;
+    opacity: 0;
+
+    &:before {
+      animation: none;
+    }
+  }
+}

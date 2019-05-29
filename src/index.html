@@ -10,28 +10,65 @@
 
 <body>
 
-  <nav>
-    <a href="#">home</a>
-    <a href="#">about</a>
-    <a href="#">services</a>
-    <a href="#">team</a>
-    <a href='#'>faqs</a>
-    <a href="#">contact</a>
-  </nav>
+  <div class="loader"></div>
 
-  <header></header>
+  <main class="main-container">
+    <nav class="nav" data-module="Nav">
+      <div class="container">
+        <a href="#" class="nav-logo">Pimp My Ride</a>
+        <button class="nav-toggle" aria-label="toggle menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li>
+            <a class="active" href="#">Home</a>
+          </li>
+          <li>
+            <a href="# ">About</a>
+          </li>
+          <li>
+            <a href="# ">Services</a>
+          </li>
+          <li>
+            <a href="# ">Team</a>
+          </li>
+          <li>
+            <a href="# ">Faqs</a>
+          </li>
+          <li>
+            <a href="# ">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <section>services</section>
+    <header class="header jarallax" data-module="Header">
+      <div class="container">
+        <div class="header-content center">
+          <h1>
+            Customize your car,
+            <br> into your dream car
+          </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, in quidem.</p>
+          <button class="btn btn-main ">
+            <a href="# ">Learn more</a>
+          </button>
+        </div>
+      </div>
+    </header>
 
-  <section>portfolio</section>
+    <section data-module="Services">services</section>
 
-  <section>testomonials</section>
+    <section data-module="Portfolio">portfolio</section>
 
-  <section>featured</section>
+    <section data-module="Testimonials">testimonials</section>
 
-  <section>form</section>
+    <section data-module="Featured">featured</section>
 
-  <footer></footer>
+    <section data-module="Form">form</section>
+
+    <footer data-module="Footer"></footer>
+  </main>
 
 </body>
 
