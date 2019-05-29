@@ -1,0 +1,105 @@
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url('/assets/hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(black, 0.5);
+  }
+
+  & > .container {
+    height: 100%;
+  }
+
+  &-content {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+
+    h1 {
+      font-size: 3rem;
+      margin: 1.6rem 0;
+      text-transform: capitalize;
+
+      @include breakpoint(l) {
+        font-size: 2.7rem;
+        margin: 1rem 0;
+      }
+
+      @include breakpoint(xm) {
+        font-size: 2.3rem;
+        margin: 1rem 0;
+      }
+
+      @include breakpoint(m) {
+        font-size: 2rem;
+      }
+
+      @include breakpoint(sf) {
+        font-size: 1.7rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2.4rem;
+
+      @include breakpoint(l) {
+        margin-top: .4rem;
+      }
+
+      @include breakpoint(s) {
+        font-size: 1rem;
+      }
+    }
+
+    @include breakpoint(l) {
+      width: 90%;
+    }
+
+    @include breakpoint(xm) {
+      width: 75%;
+      padding: 9rem 0;
+    }
+
+    @include breakpoint(m) {
+      width: 55%;
+      padding: 7rem 0;
+    }
+
+    @include breakpoint(s) {
+      width: 45%;
+    }
+
+    @include breakpoint(sf) {
+      width: 40%;
+    }
+  }
+
+  @include breakpoint(xl) {
+    background-image: url('/assets/hero-m.jpg');
+  }
+
+  @include breakpoint(xm) {
+    background-image: url('/assets/hero-s.jpg');
+    height: 100%;
+  }
+
+  @include breakpoint(s) {
+    background-image: url('/assets/hero-xs.jpg');
+  }
+}
+
