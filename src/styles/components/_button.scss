@@ -1,0 +1,19 @@
+.btn {
+  border-radius: 2px;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  font-size: .85rem;
+  letter-spacing: 1px;
+  transition: .2s ease-out;
+
+  &-main {
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background: #fff;
+      color: #000;
+    }
+  }
+}
