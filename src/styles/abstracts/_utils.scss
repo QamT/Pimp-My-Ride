@@ -9,3 +9,26 @@
   overflow: hidden;
   position: absolute;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center-abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.block {
+  display: block;
+}
+
+.transition--active {
+  opacity: 1;
+}
+

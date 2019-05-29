@@ -1,0 +1,167 @@
+.nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 5.4rem;
+  color: #fff;
+  z-index: 5;
+
+  & .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem;
+  }
+
+  &-logo {
+    font-family: poppins, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    @include breakpoint(m) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &-toggle {
+    display: none;
+    color: #fff;
+
+    &:focus {
+      color: $primary-blue;
+    }
+
+    @include breakpoint(l) {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+
+  &-links {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      user-select: none;
+
+      a {
+        position: relative;
+        font-size: .95rem;
+        margin: 0 1rem;
+        transition: color .25s ease;
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          height: 2px;
+          width: 100%;
+          transform: scaleX(0);
+          background: $primary-blue;
+          transition: transform .18s linear;
+        }
+
+        &:focus:after,
+        &:hover:after {
+          transform: scaleX(1);
+        }
+
+        &.active:after {
+          transform: scaleX(1);
+        }
+
+        @include breakpoint(l) {
+          &:after {
+            content: '';
+            position: absolute;
+            height: 0px;
+            width: 0;
+          }
+
+          &.active {
+            color: $primary-blue;
+          }
+
+          &:focus,
+          &:hover {
+            color: $primary-blue;
+          }
+        }
+      }
+
+      @include breakpoint(l) {
+        height: 0;
+        visibility: hidden;
+        width: 100%;
+        background: rgba(#000, .7);
+        text-transform: none;
+        position: absolute;
+        top: 3.5rem;
+        left: 50%;
+        padding: 0 8rem;
+        transform: translateX(-50%);
+        flex-direction: column;
+        transition: height .3s ease;
+        overflow: hidden;
+
+        li:first-child {
+          margin-top: 1.6rem;
+        }
+
+        li:last-child {
+          margin-bottom: 1.8rem;
+        }
+
+        li {
+          position: relative;
+          margin: 1rem 0;
+          width: 100%;
+
+          &:not(:last-of-type):after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1rem;
+            height: 1px;
+            width: 100%;
+            margin-left: 1rem;
+            background-color: rgba(#fff, .15);
+          }
+        }
+
+        &.toggle {
+          visibility: visible;
+          height: 21rem;
+        }
+      }
+
+      @include breakpoint(xm) {
+        padding: 0 5rem;
+      }
+
+      @include breakpoint(m) {
+        padding: 0 0rem;
+      }
+    }
+
+  &--fixed {
+    height: 4.5rem;
+    position: fixed;
+    top: 0;
+    background: #f8f8f8;
+    color: $primary-text-color;
+    box-shadow: 0 0 40px 0 rgba(#000, .08);
+    animation: navSlide .5s ease;
+
+    & .nav-toggle {
+      color: $primary-text-color;
+    }
+  }
+}
+
+
+
