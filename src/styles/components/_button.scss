@@ -1,19 +1,31 @@
 .btn {
   border-radius: 2px;
   padding: 1rem 2.5rem;
-  text-transform: uppercase;
   font-size: .85rem;
-  letter-spacing: 1px;
   transition: .2s ease-out;
 
   &-main {
     border: 1px solid #fff;
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 
     &:hover,
     &:focus {
       background: #fff;
       color: #000;
+    }
+  }
+
+  &-service {
+    font-size: .8rem;
+    text-transform: uppercase;
+    padding: .8rem 2.6rem;
+    box-shadow: 0 0 3px rgba(#000, .5);
+
+    &:hover,
+    &:focus {
+      background: #f8f8f8;
     }
   }
 }

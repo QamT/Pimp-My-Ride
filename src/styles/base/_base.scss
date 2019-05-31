@@ -28,6 +28,10 @@ html {
     transition: opacity .4s ease;
   }
 
+  section:nth-child(even) {
+    background: #fff;
+  }
+
   a {
     text-decoration: none;
     color: inherit;

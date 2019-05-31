@@ -32,6 +32,7 @@
     h1 {
       font-size: 3rem;
       margin: 1.6rem 0;
+      color: #fff;
       text-transform: capitalize;
 
       @include breakpoint(l) {
@@ -66,26 +67,12 @@
       }
     }
 
-    @include breakpoint(l) {
-      width: 90%;
-    }
-
     @include breakpoint(xm) {
-      width: 75%;
       padding: 9rem 0;
     }
 
     @include breakpoint(m) {
-      width: 55%;
       padding: 7rem 0;
-    }
-
-    @include breakpoint(s) {
-      width: 45%;
-    }
-
-    @include breakpoint(sf) {
-      width: 40%;
     }
   }
 
