@@ -1,4 +1,10 @@
-.main {
-  opacity: 0;
-  transition: opacity .3s ease;
+.main-container {
+  .service {
+
+    &-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

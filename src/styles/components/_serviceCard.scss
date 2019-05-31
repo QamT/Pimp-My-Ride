@@ -1,0 +1,88 @@
+.service-cards {
+  display: flex;
+  width: 100%;
+
+  @include breakpoint(l) {
+      flex-direction: column;
+    }
+}
+
+.service_card {
+  background: #fff;
+  margin: 0 1rem;
+  padding: 3rem;
+  border-radius: 2px;
+  text-align: center;
+  box-shadow: 0 2px 20px rgba(#000, .07);
+  transition: box-shadow .3s ease-in-out;
+
+  &:first-child,
+  &:last-child {
+    flex: 1;
+    align-self: center;
+  }
+
+  &-title {
+    width: 100%;
+    margin-bottom: 3rem;
+    border-radius: 2px;
+    padding: .8rem 0;
+    background: #f8f8f8;
+    box-shadow: 0 0 3px rgba(#000, .1);
+
+    h5 {
+      margin: 0;
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: .8rem;
+      text-transform: uppercase;
+      color: $primary-blue;
+    }
+
+    span {
+      font-size: 1.4rem;
+      color: $primary-black;
+    }
+
+    h5,
+    span {
+      margin: .6rem 0;
+    }
+  }
+
+  hr {
+      border-top: 1px solid $primary-black;
+      width: 40px;
+    }
+
+  &-features {
+    margin: 3rem 0;
+
+    ul {
+
+      li {
+        margin: .6rem 0;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 2px 20px rgba(#000, .2);
+  }
+
+  @include breakpoint(l) {
+    margin: 1rem 0;
+    width: 35rem;
+  }
+
+  @include breakpoint(xm) {
+    margin: 1rem 0;
+    width: 25rem;
+  }
+
+  @include breakpoint(m) {
+    margin: 1rem 0;
+    width: 20rem;
+  }
+}
