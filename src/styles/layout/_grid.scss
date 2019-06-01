@@ -4,7 +4,11 @@
   padding: 0 15px;
 
   @include breakpoint(xl) {
-    width: 1170px;
+    width: 1160px;
+  }
+
+  @include breakpoint(l) {
+    width: 980px;
   }
 
   @media (max-width: 992px) {

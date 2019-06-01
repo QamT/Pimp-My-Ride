@@ -16,6 +16,4 @@ window.addEventListener('DOMContentLoaded', () => {
 // add accessibility
 // add event listeners
 // clean up repetitive code
-// make utils for selecting classes and adding event listeners
 // change readme
-// commit
