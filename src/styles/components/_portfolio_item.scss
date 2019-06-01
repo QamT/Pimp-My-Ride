@@ -1,0 +1,58 @@
+.portfolio-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio_item {
+  position: relative;
+  margin: .8rem;
+  overflow: hidden;
+
+  &:after {
+    background: #000;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.5s;
+  }
+
+  &:hover:after {
+    opacity: .4;
+    pointer-events: none;
+  }
+
+  img {
+    height: 170px;
+    width: 270px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform 4.5s ease-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+
+      & + span {
+        opacity: 1;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  span {
+    color: #fff;
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.5s ease 0.1s;
+    pointer-events: none;
+  }
+}
