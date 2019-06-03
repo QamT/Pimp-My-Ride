@@ -21,7 +21,7 @@ export default class Nav {
   }
 
   highlightActiveLink(e) {
-    if (e.key === 'Enter' || e.type === 'click') {
+    if (u.validateEvent(e)) {
       this.links.forEach(el => u.removeClass(el, 'active'));
       u.addClass(e.target, 'active');
     }
@@ -29,7 +29,7 @@ export default class Nav {
 
   toggleMenu(e) {
     e.preventDefault();
-    if (e.key === 'Enter' || e.type === 'click') {
+    if (u.validateEvent(e)) {
       const expanded = this.toggle.getAttribute('aria-expanded') === 'true' || false;
       u.attr(this.toggle, 'aria-expanded', !expanded);
       u.toggleClass(this.navContainer, 'toggle');

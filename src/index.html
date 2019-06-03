@@ -57,9 +57,9 @@
       </div>
     </header>
 
-    <section class="service" data-module="Services">
+    <section class="service" data-module="Service">
       <div class="container center">
-        <div class="service-content section-pd">
+        <div class="column section-pd">
           <h3 class="section-title">Services</h3>
           <div class="service-cards section-mg">
             <div class="service_card">
@@ -119,45 +119,114 @@
 
     <section class="portfolio" data-module="Portfolio">
       <div class="container center">
-        <div class="portfolio-content section-pd">
+        <div class="column section-pd">
           <h3 class="section-title">Portfolio</h3>
-          <div class="portfolio-items section-mg">
-            <div class="portfolio_item">
+          <ul class="portfolio-items section-mg">
+            <li class="portfolio_item" tabindex="0">
               <img src="./assets/car-1.jpg" alt="pink customized car">
               <span>Lorem, ipsum dolor</span>
-            </div>
-            <div class="portfolio_item">
+            </li>
+            <li class="portfolio_item" tabindex="0">
               <img src="./assets/car-2.jpg" alt="red customized car">
               <span>Lorem, ipsum dolor</span>
-            </div>
-            <div class="portfolio_item">
+            </li>
+            <li class="portfolio_item" tabindex="0">
               <img src="./assets/car-3.jpg" alt="orange customized car">
               <span>Lorem, ipsum dolor</span>
-            </div>
-            <div class="portfolio_item">
+            </li>
+            <li class="portfolio_item" tabindex="0">
               <img src="./assets/car-4.jpg" alt="air force customized car">
               <span>Lorem, ipsum dolor</span>
-            </div>
-            <div class="portfolio_item">
+            </li>
+            <li class="portfolio_item" tabindex="0">
               <img src="./assets/car-5.jpg" alt="black customized car">
               <span>Lorem, ipsum dolor</span>
-            </div>
-            <div class="portfolio_item">
+            </li>
+            <li class="portfolio_item" tabindex="0">
               <img src="./assets/car-6.jpg" alt="yellow customized car">
               <span>Lorem, ipsum dolor</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial" data-module="Testimonial">
+      <div class="container center">
+        <div class="column section-pd">
+          <h3 class="section-title">Testimonials</h3>
+          <div class="testimonial-sections section-mg">
+            <div class="testimonial_section initial">
+              <img src='./assets/testimonial-1.png' alt="first testimonial">
+              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus eveniet maxime dolores hic veritatis
+                ducimus pariatur, quisquam, impedit culpa sapiente quidem veniam accusantium quia illo, tempore quas voluptas
+                ipsum!"
+              </p>
+              <span>tony stark</span>
             </div>
+            <div class="testimonial_section">
+              <img src='./assets/testimonial-2.jpg' alt="second testimonial">
+              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus eveniet maxime dolores hic veritatis
+                ducimus pariatur, quisquam, impedit culpa sapiente quidem veniam accusantium quia illo, tempore quas voluptas
+                ipsum!"
+              </p>
+              <span>jasmine wells</span>
+            </div>
+            <div class="testimonial_section">
+              <img src='./assets/testimonial-3.jpg' alt="third testimonial">
+              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus eveniet maxime dolores hic veritatis
+                ducimus pariatur, quisquam, impedit culpa sapiente quidem veniam accusantium quia illo, tempore quas voluptas
+                ipsum!"
+              </p>
+              <span>barry allen</span>
+            </div>
+          </div>
+          <button class="btn-prev" aria-label="previous testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="btn-next" aria-label="next testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="slide-indicators">
+            <ul>
+              <li class="slide-indicator" tabindex="0" aria-label="first testimonial"></li>
+              <li class="slide-indicator" tabindex="0" aria-label="second testimonial"></li>
+              <li class="slide-indicator" tabindex="0" aria-label="third testimonial"></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section data-module="Testimonials">testimonials</section>
+    <section class="featured" data-module="Featured">
+      <div class="container center">
+        <div class="column section-pd">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-slack"></i>
+          <i class="fab fa-reddit"></i>
+          <i class="fab fa-pied-piper"></i>
+          <i class="fab fa-yahoo"></i>
+        </div>
+      </div>
+    </section>
 
-    <section data-module="Featured">featured</section>
+    <section class="contact" data-module="Contact">
+      <div class="container center">
+        <div class="column section-pd">
+          <h3 class="section-title">Get In Touch</h3>
+          <div class="contact-form section-mg">
+            <form>
+              <input type="email" name='email' aria-label="enter your email" placeholder="Enter your email" required autocomplete="off">
+              <button class="btn-send" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section data-module="Contact">contact</section>
-
-    <footer data-module="Footer"></footer>
+    <footer class="footer">
+      Footer
+    </footer>
   </main>
 
 </body>
