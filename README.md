@@ -15,8 +15,5 @@ I wanted to gain further experience building a static website with vanilla js. T
 - Webpack for processing and bundling code
 - Google Analytics
 
-### Live Site Screenshots
-- under development
-
 ### Live Site
-- under development
+https://pimpmyride.netlify.com/
