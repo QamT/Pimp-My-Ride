@@ -11,7 +11,7 @@ module.exports = {
   ],
   output: {
     path: path.join(config.root, config.paths.dist),
-    filename: '[name].bundle.js',
+    filename: '[name].bundle.js'
   },
   resolve: {
     alias: {
