@@ -94,7 +94,7 @@ const imageLoader = {
 const images = {
   test: /\.(gif|png|jpe?g|svg)$/i,
   use: [
-    'file-loader?name=images/[name].[ext]',
+    'file-loader?name=assets/[name].[ext]',
     config.env === 'production' ? imageLoader : null,
   ].filter(Boolean),
 };

@@ -9,5 +9,3 @@ window.addEventListener('DOMContentLoaded', () => {
     new Module(el);
   });
 });
-
-
