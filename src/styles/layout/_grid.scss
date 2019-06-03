@@ -1,41 +1,10 @@
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 99%;
   margin: 0 auto;
   padding: 0 15px;
 
-  @include breakpoint(xl) {
-    width: 1160px;
-  }
-
-  @include breakpoint(l) {
-    width: 980px;
-  }
-
-  @media (max-width: 992px) {
-    width: 950px;
-  }
-
-  @media (max-width: 862px) {
-    width: 830px;
-  }
-
-  @media (max-width: 768px) {
-    width: 730px;
-  }
-
-  @media (max-width: 700px) {
-    width: 670px;
-  }
-
-  @media (max-width: 600px) {
-    width: 570px;
-  }
-
-  @media (max-width: 480px) {
-    width: 450px;
-  }
-
-  @media (max-width: 400px) {
-    width: 360px;
+  @include breakpoint(sf) {
+    padding: 5px;
   }
 }

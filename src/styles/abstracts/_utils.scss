@@ -24,9 +24,13 @@
   transform: translate(-50%, -50%);
 }
 
-.center-grid {
-
+.column {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .block {
   display: block;
@@ -42,6 +46,10 @@
 
 .section-pd {
   padding: 60px 0;
+}
+
+.o-hidden {
+  overflow: hidden;
 }
 
 

@@ -19,3 +19,5 @@ export const addClass = (element, className) => element.classList.add(className)
 export const removeClass = (element, className) => element.classList.remove(className);
 
 export const toggleClass = (element, className) => element.classList.toggle(className);
+
+export const validateEvent = e => !!(e.key === 'Enter' || e.type === 'click');

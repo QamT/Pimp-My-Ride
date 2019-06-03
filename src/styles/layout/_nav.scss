@@ -30,7 +30,7 @@
     color: #fff;
 
     &:focus {
-      color: $primary-blue;
+      color: $primary-color;
     }
 
     @include breakpoint(l) {
@@ -61,7 +61,7 @@
           height: 2px;
           width: 100%;
           transform: scaleX(0);
-          background: $primary-blue;
+          background: $primary-color;
           transition: transform .18s linear;
         }
 
@@ -83,12 +83,12 @@
           }
 
           &.active {
-            color: $primary-blue;
+            color: $primary-color;
           }
 
           &:focus,
           &:hover {
-            color: $primary-blue;
+            color: $primary-color;
           }
         }
       }
@@ -153,12 +153,12 @@
     position: fixed;
     top: 0;
     background: #f8f8f8;
-    color: $primary-text-color;
+    color: $primary-grey;
     box-shadow: 0 0 40px 0 rgba(#000, .08);
     animation: navSlide .5s ease;
 
     & .nav-toggle {
-      color: $primary-text-color;
+      color: $primary-color;
     }
   }
 }

@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "glob": "^7.1.4",
-    "jarallax": "^1.10.7"
+    "jarallax": "^1.10.7",
+    "scrollreveal": "^4.0.5"
   }
 }

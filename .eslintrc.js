@@ -8,6 +8,7 @@ module.exports = {
     "global-require": 0,
     "import/no-dynamic-require": 0,
     "no-new": 0,
+    "no-plusplus": 0
   },
   settings: {
     'import/resolver': {

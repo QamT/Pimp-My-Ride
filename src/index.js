@@ -10,10 +10,4 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// carousel
-// transition on view
-// add responsiveness
-// add accessibility
-// add event listeners
-// clean up repetitive code
-// change readme
+
