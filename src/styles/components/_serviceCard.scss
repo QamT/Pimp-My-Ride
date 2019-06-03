@@ -11,15 +11,16 @@
   background: #fff;
   margin: 0 1rem;
   padding: 3rem;
+  width: 33.33%;
   border-radius: 2px;
   text-align: center;
   box-shadow: 0 2px 20px rgba(#000, .07);
   transition: box-shadow .3s ease-in-out;
+  align-self: center;
 
   &:first-child,
   &:last-child {
     flex: 1;
-    align-self: center;
   }
 
   &-title {
@@ -36,7 +37,7 @@
       letter-spacing: 1px;
       font-size: .8rem;
       text-transform: uppercase;
-      color: $primary-blue;
+      color: $primary-color;
     }
 
     span {

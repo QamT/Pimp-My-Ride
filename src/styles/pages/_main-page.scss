@@ -1,19 +1,21 @@
 .main-container {
-  .service {
-
-    &-content {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
+  .testimonial .column {
+    overflow: hidden;
+    width: 90%;
   }
 
-  .portfolio {
+  .featured .column {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
 
-    &-content {
-      position: relative;
-      display: flex;
-      flex-direction: column;
+    i {
+      font-size: 4rem;
+
+      @include breakpoint(m) {
+        font-size: 3rem;
+      }
     }
   }
 }

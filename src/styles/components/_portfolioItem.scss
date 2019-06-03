@@ -8,6 +8,7 @@
   position: relative;
   margin: .8rem;
   overflow: hidden;
+  outline: none;
 
   &:after {
     background: #000;
@@ -22,7 +23,13 @@
     transition: opacity 0.5s;
   }
 
-  &:hover:after {
+  &:hover span,
+  &:focus span {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+
+  &:hover:after, &:focus:after {
     opacity: .4;
     pointer-events: none;
   }
@@ -37,11 +44,6 @@
     &:hover,
     &:focus {
       transform: scale(1.1);
-
-      & + span {
-        opacity: 1;
-        transform: translateY(-50%);
-      }
     }
   }
 

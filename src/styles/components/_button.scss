@@ -29,3 +29,51 @@
     }
   }
 }
+
+.btn-prev,
+.btn-next {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: #c7c9cf;
+  transform: translateY(-50%);
+  z-index: 1001;
+  transition: color .3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $primary-grey;
+  }
+
+  @include breakpoint(xm) {
+    display: none;
+  }
+}
+
+.btn-next {
+  right: 0;
+}
+
+.btn-send {
+  background: $primary-color;
+  width: 20%;
+  height: 50px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  line-height: 36px;
+  padding: 0 16px;
+  text-align: center;
+  transition: background .25s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: darken($primary-color, 10%);
+  }
+
+  @include breakpoint(xm) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+.contact-form {
+  form {
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint(xm) {
+      flex-direction: column;
+    }
+  }
+
+  input {
+    height: 50px;
+    width: 35%;
+    background-color: #fff;
+    border: 2px solid #e0e6e8;
+    border-radius: 3px;
+    padding-left: 1rem;
+    margin-right: 1rem;
+    transition: border .15s;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+
+    @include breakpoint(l) {
+      width: 50%;
+    }
+
+    @include breakpoint(xm) {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+}
