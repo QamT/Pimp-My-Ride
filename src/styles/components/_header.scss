@@ -1,7 +1,7 @@
 .header {
   position: relative;
   height: 100vh;
-  background-image: url('/assets/hero.jpg');
+  background-image: url('https://res.cloudinary.com/qamnodeapp/image/upload/v1559594186/pimpmyride/hero.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -77,16 +77,16 @@
   }
 
   @include breakpoint(xl) {
-    background-image: url('/assets/hero-m.jpg');
+    background-image: url('https://res.cloudinary.com/qamnodeapp/image/upload/v1559594194/pimpmyride/hero-m.jpg');
   }
 
   @include breakpoint(xm) {
-    background-image: url('/assets/hero-s.jpg');
+    background-image: url('https://res.cloudinary.com/qamnodeapp/image/upload/v1559594195/pimpmyride/hero-s.jpg');
     height: 100%;
   }
 
   @include breakpoint(s) {
-    background-image: url('/assets/hero-xs.jpg');
+    background-image: url('https://res.cloudinary.com/qamnodeapp/image/upload/v1559594198/pimpmyride/hero-xs.jpg');
   }
 }
 

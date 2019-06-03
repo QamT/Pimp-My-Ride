@@ -34,10 +34,7 @@ const styleLoader = {
 };
 
 const cssLoader = {
-  loader: 'css-loader',
-  options: {
-    sourceMap,
-  },
+  loader: 'css-loader'
 };
 
 const postcssLoader = {
@@ -48,15 +45,6 @@ const postcssLoader = {
     ],
     sourceMap,
   },
-};
-
-const css = {
-  test: /\.css$/,
-  use: [
-    MiniCssExtractPlugin.loader,
-    cssLoader,
-    postcssLoader,
-  ],
 };
 
 const sass = {
@@ -99,24 +87,9 @@ const images = {
   ].filter(Boolean),
 };
 
-const fonts = {
-  test: /\.(woff|woff2|eot|ttf|otf)$/,
-  use: [
-    {
-      loader: 'file-loader',
-      query: {
-        name: '[name].[ext]',
-        outputPath: 'fonts/',
-      },
-    },
-  ],
-};
-
 module.exports = [
   html,
   js,
-  css,
   sass,
-  images,
-  fonts,
+  images
 ];
