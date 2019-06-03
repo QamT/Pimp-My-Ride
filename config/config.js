@@ -7,7 +7,7 @@ if (!ROOT) {
 }
 
 const config = {
-  googleAnalyticsUA: '',
+  googleAnalyticsUA: 'UA-141403675-1',
 
   favicon: path.join(ROOT, '/src/assets/favicon.jpg'),
 
