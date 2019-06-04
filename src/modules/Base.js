@@ -24,7 +24,7 @@ export default class Base {
   }
 
   init() {
-    setTimeout(() => u.addClass(this.loader, 'loader-fade'), 0);
+    setTimeout(() => u.addClass(this.loader, 'loader-fade'), 3000);
     u.addClass(this.mainContainer, 'transition--active');
   }
 }
